@@ -1,0 +1,165 @@
+.navbar .nav-item {
+	margin-left: 45px;
+}
+
+.navbar .nav-item .nav-link {
+	padding: 5px 0;
+	position: relative;
+}
+
+.navbar .nav-item .nav-link::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	background-color: #fa921ae6;
+	transition: all 0.5s ease;
+	transform: scale(0);
+}
+
+.navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link:hover::before {
+	transform: scale(1);
+}
+
+#ket {
+	max-width: 70%;
+}
+
+#home {
+	padding-top: 20px;
+}
+.blob {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+	stroke: #ff9900e6;
+	width: 30vmax;
+	z-index: -1;
+	animation: move 25s ease-in-out infinite;
+	transform-origin: 50% 50%;
+}
+
+@keyframes move {
+	0% {
+		transform: scale(1) translate(10px, -30px);
+	}
+	38% {
+		transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
+	}
+	40% {
+		transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
+	}
+	78% {
+		transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
+	}
+	80% {
+		transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
+	}
+	100% {
+		transform: scale(1) translate(10px, -30px);
+	}
+}
+
+#about {
+	padding: 15% 15% 30% 15%;
+}
+
+#img-abt {
+	border-radius: 50%;
+	background-color: #fa921ae6;
+	opacity: 0;
+	transition: ease-in;
+}
+
+#skills {
+	padding: 0%;
+}
+
+#icon-skils {
+	margin-top: 30px;
+	font-size: 5rem;
+}
+
+#icon-skils p {
+	font-size: 14px;
+}
+
+.box {
+	padding-top: 50px;
+	border-radius: 20px;
+	opacity: 0;
+	transition: ease-in;
+}
+
+.box {
+	position: relative;
+	top: -130px;
+	padding-bottom: 100px;
+}
+
+.box h2 {
+	padding-top: 50px;
+}
+
+#sertif {
+	opacity: 0;
+	transition: ease-in;
+}
+
+.card {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 25%;
+}
+
+.card-img-top {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
+}
+
+.card-img-top:hover {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+.footer {
+	padding: 50px 0;
+	color: #f0f9ff;
+}
+
+.footer .item.social {
+	text-align: center;
+}
+
+.footer .item.social > a {
+	font-size: 20px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+	margin: 0 8px;
+	color: #fff;
+	opacity: 0.75;
+}
+
+.footer .item.social > a:hover {
+	opacity: 0.9;
+}
+
+.footer .copyright {
+	text-align: center;
+	padding-top: 24px;
+	opacity: 0.3;
+	font-size: 13px;
+	margin-bottom: 0;
+}
